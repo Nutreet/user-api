@@ -2,16 +2,14 @@ module github.com/nutreet/user-api
 
 go 1.19
 
-require (
-	firebase.google.com/go/v4 v4.11.0
-	github.com/nutreet/common v0.0.0-00010101000000-000000000000
-)
+require firebase.google.com/go/v4 v4.11.0
 
 require (
 	cloud.google.com/go/compute v1.19.0 // indirect
 	cloud.google.com/go/iam v0.13.0 // indirect
 	cloud.google.com/go/longrunning v0.4.1 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.16.0 // indirect
+	github.com/nutreet/common v1.13.0
 	golang.org/x/term v0.8.0 // indirect
 	google.golang.org/genproto v0.0.0-20230526203410-71b5a4ffd15e // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230530153820-e85fd2cbaebc // indirect
@@ -19,8 +17,6 @@ require (
 	gopkg.in/airbrake/gobrake.v2 v2.0.9 // indirect
 	gopkg.in/gemnasium/logrus-airbrake-hook.v2 v2.1.2 // indirect
 )
-
-replace github.com/nutreet/common => ../common
 
 require (
 	cloud.google.com/go v0.110.0 // indirect
